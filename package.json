@@ -1,0 +1,18 @@
+{
+  "name": "citelocus",
+  "version": "1.0.10",
+  "private": true,
+  "type": "module",
+  "description": "Google Scholar authorship, venue badges and citation statistics",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "test": "node tests/extension.test.mjs",
+    "check": "node scripts/check.mjs && npm test",
+    "package": "python scripts/package.py"
+  },
+  "devDependencies": {
+    "jsdom": "29.1.1"
+  }
+}

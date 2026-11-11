@@ -1,0 +1,8 @@
+.cl-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0 2px; }
+.cl-badge {
+  display: inline-block; padding: 1px 6px; border-radius: 4px; border: 1px solid #bdd8cb;
+  background: #eef7f1; color: #105943; font: 400 11px/16px system-ui, sans-serif; white-space: nowrap;
+}
+.cl-role { border-color: #b8d2f5; background: #ecf4ff; color: #144c96; }
+.cl-warning { border-color: #edc5bc; background: #fdf1ee; color: #a23222; }
+.cl-status { border-color: #d9dce0; background: #f5f6f7; color: #555d66; }

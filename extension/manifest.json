@@ -1,0 +1,121 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  "version": "1.0.10",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "CiteLocus",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "catalogs.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://ieeexplore.ieee.org/*",
+    "https://doi.org/*",
+    "https://api.crossref.org/*",
+    "https://data.crosscite.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scholar.google.com/citations*",
+        "https://scholar.google.com/scholar*",
+        "https://scholar.google.com.hk/citations*",
+        "https://scholar.google.com.hk/scholar*",
+        "https://scholar.google.com.tw/citations*",
+        "https://scholar.google.com.tw/scholar*",
+        "https://scholar.google.com.sg/citations*",
+        "https://scholar.google.com.sg/scholar*",
+        "https://scholar.google.com.au/citations*",
+        "https://scholar.google.com.au/scholar*",
+        "https://scholar.google.co.uk/citations*",
+        "https://scholar.google.co.uk/scholar*",
+        "https://scholar.google.co.jp/citations*",
+        "https://scholar.google.co.jp/scholar*",
+        "https://scholar.google.co.kr/citations*",
+        "https://scholar.google.co.kr/scholar*",
+        "https://scholar.google.ca/citations*",
+        "https://scholar.google.ca/scholar*",
+        "https://scholar.google.de/citations*",
+        "https://scholar.google.de/scholar*",
+        "https://scholar.google.fr/citations*",
+        "https://scholar.google.fr/scholar*",
+        "https://scholar.google.it/citations*",
+        "https://scholar.google.it/scholar*",
+        "https://scholar.google.es/citations*",
+        "https://scholar.google.es/scholar*",
+        "https://scholar.google.nl/citations*",
+        "https://scholar.google.nl/scholar*",
+        "https://scholar.google.ch/citations*",
+        "https://scholar.google.ch/scholar*",
+        "https://scholar.google.se/citations*",
+        "https://scholar.google.se/scholar*",
+        "https://scholar.google.cn/citations*",
+        "https://scholar.google.cn/scholar*",
+        "https://scholar.google.co.in/citations*",
+        "https://scholar.google.co.in/scholar*",
+        "https://scholar.google.com.br/citations*",
+        "https://scholar.google.com.br/scholar*"
+      ],
+      "js": [
+        "vendor/pinyin-pro.js",
+        "entry.js"
+      ],
+      "css": [
+        "app/marks.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "app/*.mjs",
+        "app/panel.css",
+        "privacy.html"
+      ],
+      "matches": [
+        "https://scholar.google.com/*",
+        "https://scholar.google.com.hk/*",
+        "https://scholar.google.com.tw/*",
+        "https://scholar.google.com.sg/*",
+        "https://scholar.google.com.au/*",
+        "https://scholar.google.co.uk/*",
+        "https://scholar.google.co.jp/*",
+        "https://scholar.google.co.kr/*",
+        "https://scholar.google.ca/*",
+        "https://scholar.google.de/*",
+        "https://scholar.google.fr/*",
+        "https://scholar.google.it/*",
+        "https://scholar.google.es/*",
+        "https://scholar.google.nl/*",
+        "https://scholar.google.ch/*",
+        "https://scholar.google.se/*",
+        "https://scholar.google.cn/*",
+        "https://scholar.google.co.in/*",
+        "https://scholar.google.com.br/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "local/migrate.mjs",
+    "type": "module"
+  }
+}

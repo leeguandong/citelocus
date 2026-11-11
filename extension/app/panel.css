@@ -1,0 +1,33 @@
+:host { all: initial; display: block; margin: 14px 0; color: #18352e; font: 13px/1.4 system-ui, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+details { border: 1px solid #c8dfd4; border-radius: 11px; background: #fff; overflow: hidden; }
+summary { padding: 12px 14px; background: #174e3e; color: #fff; cursor: pointer; font-size: 15px; }
+nav { display: flex; gap: 4px; flex-wrap: wrap; padding: 8px 8px 0; }
+button, input, select { font: inherit; }
+button, input, select { min-width: 0; padding: 4px 7px; border: 1px solid #c8dfd4; border-radius: 5px; background: #fff; color: #174e3e; }
+button { cursor: pointer; }
+button[aria-pressed="true"] { background: #e0f1e8; border-color: #92bdac; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #1d755c; outline-offset: 2px; }
+.body { padding: 8px; }
+.figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+.figure { display: grid; padding: 6px; border: 1px solid #dce9e2; border-radius: 6px; background: #f5faf7; overflow-wrap: anywhere; }
+.figure span, .figure small { color: #426457; font-size: 11px; }
+.figure strong { font-size: 16px; }
+h3 { font-size: 13px; margin: 0 0 6px; }
+.note { color: #48665b; margin: 0 0 8px; font-size: 11px; }
+section, .filters { margin: 11px 0; }
+.bars { display: grid; gap: 3px; font-size: 11px; }
+.bar-row { display: grid; grid-template-columns: minmax(40px, auto) 1fr minmax(22px, auto); align-items: center; gap: 6px; }
+.bar-row span:last-child { text-align: right; }
+.bar { height: 5px; border-radius: 4px; background: #e6f1eb; overflow: hidden; }
+.fill { height: 100%; background: #38856e; }
+.table-scroll { overflow: auto; margin: 5px 0; }
+table { border-collapse: collapse; width: 100%; color: inherit; font-size: 11px; }
+td, th { text-align: left; padding: 4px; border-bottom: 1px solid #e0ebe4; }
+td:first-child { min-width: 68px; overflow-wrap: anywhere; }
+th { font-weight: 600; color: #426457; }
+td a { color: #126c53; }
+.filters, form { display: flex; gap: 5px; flex-wrap: wrap; }
+.filters select { max-width: 100%; }
+form { margin: 4px 0 8px; }
+form input { flex: 1; }

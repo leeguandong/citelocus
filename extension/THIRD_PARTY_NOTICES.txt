@@ -1,0 +1,12 @@
+CiteLocus 1.0.10 — third-party notices
+
+Chinese name transliteration uses pinyin-pro 3.29.5 by zh-lx, under the MIT license.
+The original copyright and license are included in vendor/pinyin-pro-LICENSE.txt.
+https://github.com/zh-lx/pinyin-pro
+
+The publisher has confirmed authorization to redistribute the seven bundled venue catalogs.
+Catalog editions and record counts are shown by the extension and in the release notes.
+Labels describe the applicable catalog edition. Conference subtracks are distinguished from main-track papers.
+
+This store runtime uses the app/ and local/ implementation. Legacy src/, index/ and data/ directories
+from the development folder are not included in this archive.
